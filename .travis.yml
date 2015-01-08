@@ -1,0 +1,8 @@
+language: objective-c
+ 
+before_install:
+ 
+script:
+  - xcodebuild -configuration Debug -sdk iphoneos8.1 -target ex_variable
+ 
+after_success:
