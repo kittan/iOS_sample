@@ -1,8 +1,9 @@
 language: objective-c
- 
-before_install:
- 
+before_install: 
 script:
-  - xcodebuild -configuration Debug -sdk iphoneos8.1 -target ex_variable
- 
-after_success:
+   - xcodebuild -project ex_variable.xcodeproj -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
+after_success: 
+env:
+  global:
+  - secure: dKSTmbCPlQMsKuaixAqzgTLvTG8wZoLXGZqKQhBOzCHbyEP/kX6WCQvhyITDFikRQHnu/QlEBRyCUsZ2tCZJJ5+buwzI7elXZGRQCLFukMsOVLi4NnnfHP+QNXhaxESzWJDdEVOEeNSDQ0D8lvMdOWE8O7WgmwZqaZNTR/HrvAc=
+  - secure: kkVZsynYkYzbLyYQcyOOJoPym97/WXiR0UhV1zjsqMM5a2qY5b88pMPbRxC8qJJ5vQdRrb502/AluElTo1szGmdBwG7yURoF2Vp5yfNSnyBzpDKQ97gNmo39a36mka9lRr555m/dEhrcqnWhNTGV1CSEQ0bxZNYBltilEQ0KGJE=
