@@ -2,7 +2,7 @@ language: objective-c
 before_install: 
 script:
    - xcodebuild -project ex_variable.xcodeproj -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
-   - xcodebuild -project ex_variable.xcodeproj -scheme ex_variable_test -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO test
+   - xcodebuild -project ex_variable.xcodeproj -scheme ex_variable -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO test
 after_success: 
 env:
   global:
